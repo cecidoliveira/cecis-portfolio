@@ -1,18 +1,24 @@
 import '@mantine/core/styles.css';
-import { Flex, MantineProvider} from '@mantine/core';
+import {MantineProvider, Space} from '@mantine/core';
 import Navbar from './componentes/navbar/Navbar';
 import SectionHome from './componentes/sectionHome/SectionHome';
 import SectionAbout from './componentes/sectionAbout/SectionAbout';
+import SectionProjects from './componentes/sectionProjects/SectionProjects';
+import SectionHardSkills from './componentes/sectionHardSkills/SectionHardSkills';
 
 
 function App() {
+
   return (
     <MantineProvider defaultColorScheme="light">
       <Navbar/>
-      <Flex direction='column' gap={64}>
-        <SectionHome />
-        <SectionAbout/>
-      </Flex>
+      <SectionHome/>
+        <Space h="xl"/>
+      <SectionAbout/>
+        <Space h="xl"/>
+      <SectionProjects/>
+        <Space h="xl"/>
+      <SectionHardSkills/>
     </MantineProvider>
   )
 }

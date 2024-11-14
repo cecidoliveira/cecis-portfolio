@@ -7,7 +7,7 @@ import { TfiMouse } from "react-icons/tfi";
 const SectionHome = () => {
 
     return(
-        <Container fluid pl={24} pr={47}>
+        <Container fluid pl={24} pr={47} pos='relative' mb={8}>
             <Flex align='center' justify='space-evenly' gap={80}>
                 <Flex direction='column' gap={16}>
                     <Flex gap={8} id={classes.typingAnimation}> 

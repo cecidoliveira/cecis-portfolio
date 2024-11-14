@@ -1,0 +1,23 @@
+.imageProject{
+    box-shadow: 16px 16px 4px 0 rgba(88, 88, 88, 0.25);
+    border: 2px #ffffff solid;
+}
+
+.title{
+    margin: 0 auto;
+    font-size: 2.5rem;
+}
+
+.titleProjectCard{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.links{
+    text-transform: uppercase;
+}
+
+.links:hover{
+    color: #8a2be2;
+}
