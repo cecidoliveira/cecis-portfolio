@@ -5,6 +5,8 @@ import SectionHome from './componentes/sectionHome/SectionHome';
 import SectionAbout from './componentes/sectionAbout/SectionAbout';
 import SectionProjects from './componentes/sectionProjects/SectionProjects';
 import SectionHardSkills from './componentes/sectionHardSkills/SectionHardSkills';
+import SectionContact from './componentes/sectionContact/SectionContact';
+import Footer from './componentes/footer/Footer';
 
 
 function App() {
@@ -19,6 +21,10 @@ function App() {
       <SectionProjects/>
         <Space h="xl"/>
       <SectionHardSkills/>
+        <Space h="xl"/>
+      <SectionContact/>
+        <Space h="xl"/>
+      <Footer/>
     </MantineProvider>
   )
 }

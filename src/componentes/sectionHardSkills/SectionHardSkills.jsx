@@ -7,7 +7,7 @@ import CardsSkills from "../cardsSkills/CardsSkills";
 const SectionHardSkills = () => {
     
     return(
-        <Container fluid pr={64} pl={64}>
+        <Container fluid pr={64} pl={64} mt={32}>
             <h2 className={classes.title}>Minhas Habilidades</h2>
             
             <Flex align='center' justify='center' gap={24} mt={32}>
