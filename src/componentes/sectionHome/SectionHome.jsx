@@ -4,7 +4,7 @@ import { ActionIcon, Container, Flex, Image, Text, Tooltip } from "@mantine/core
 import { FaGithub, FaLinkedin, FaInstagram   } from "react-icons/fa";
 import { TfiMouse } from "react-icons/tfi";
 
-const SectionHome = () => {
+const SectionHome = ({scrollIntoView}) => {
 
     return(
         <Container fluid pl={24} pr={47} pos='relative' mb={8}>
@@ -56,6 +56,7 @@ const SectionHome = () => {
             <Tooltip label="Scroll" offset={-8} >
                 <ActionIcon 
                     component='button'
+                    onClick={() => scrollIntoView({alignment: 'center',})}
                     variant="transparent" 
                     color="default" 
                     size='lg'

@@ -1,5 +1,5 @@
 import { ActionIcon, Container, Flex, Text } from "@mantine/core";
-import { BiLogoInstagramAlt, BiLogoWhatsappSquare  } from "react-icons/bi";
+import { BiLogoInstagramAlt } from "react-icons/bi";
 import { RxLinkedinLogo } from "react-icons/rx";
 import { MdEmail } from "react-icons/md";
 import classes from "./sectionContact.module.css";
@@ -32,7 +32,7 @@ const SectionContact = () => {
                 <Flex align='center' justify='center' className={classes.cardContact}>
                     <ActionIcon 
                         component="a"
-                        href="https://github.com/cecidoliveira"
+                        href="https://www.linkedin.com/in/ceciliadornelas"
                         target="_blank"
                         variant="transparent" 
                         color="default" 
@@ -46,7 +46,7 @@ const SectionContact = () => {
                 <Flex align='center' justify='center' className={classes.cardContact}>
                     <ActionIcon 
                         component="a"
-                        href="https://www.linkedin.com/in/ceciliadornelas"
+                        href=""
                         target="_blank"
                         variant="transparent" 
                         color="default" 
@@ -54,20 +54,6 @@ const SectionContact = () => {
                         className={classes.links}
                     >
                         <MdEmail size={40}/>
-                    </ActionIcon>
-                </Flex>
-
-                <Flex align='center' justify='center' className={classes.cardContact}>
-                    <ActionIcon 
-                        component="a"
-                        href=""
-                        target="_blank"
-                        variant="transparent" 
-                        color="default" 
-                        size={50} 
-                        className={classes.links}
-                    >
-                        <BiLogoWhatsappSquare size={50}/>
                     </ActionIcon>
                 </Flex>
             </Flex>
