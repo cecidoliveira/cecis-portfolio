@@ -7,7 +7,7 @@ import classes from "./sectionContact.module.css";
 const SectionContact = () => {
     
     return(
-        <Container fluid pl={64} pr={64} mt={32} mb={16}>
+        <Container fluid pl={64} pr={64} mt={32} mb={16} id="contacts">
             <h2 className={classes.title}>Vamos Conversar!</h2>
             <Text size="lg" fw={500} mt={24} ta='center' pl={32} pr={32}> 
                 Estou sempre em busca de novas oportunidades de aprendizado e colaboração. Se você tem um 
@@ -46,7 +46,7 @@ const SectionContact = () => {
                 <Flex align='center' justify='center' className={classes.cardContact}>
                     <ActionIcon 
                         component="a"
-                        href=""
+                        href="mailto:ceciliadornelas.pb@gmail.com"
                         target="_blank"
                         variant="transparent" 
                         color="default" 

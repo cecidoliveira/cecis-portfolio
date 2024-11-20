@@ -9,7 +9,7 @@ import { SiStyledcomponents, SiJavascript, SiElectron } from "react-icons/si";
 const SectionProjects = () => {
     
     return(
-        <Container fluid pl={64} pr={64} mt={32}>
+        <Container fluid pl={64} pr={64} mt={32} id="projects">
             <h2 className={classes.title}>Projetos</h2>
             <Flex direction='column' gap={64} mt={32}>
 

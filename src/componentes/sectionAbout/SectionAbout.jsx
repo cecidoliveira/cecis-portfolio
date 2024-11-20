@@ -4,7 +4,7 @@ import classes from "./sectionAbout.module.css";
 const SectionAbout = ({targetRef}) => {
     
     return(
-        <Container fluid pl={64} pr={64} mt={32} ref={targetRef}>
+        <Container fluid pl={64} pr={64} mt={32} ref={targetRef} id="about">
             <h2 className={classes.title} >Sobre</h2>
             <Text size="lg" fw={500} mt={24}>Sou <span className={classes.highlights}>Cecilia Dornelas</span>, uma desenvolvedora apaixonada por criar interfaces digitais 
                 intuitivas e esteticamente agradáveis.Busco constantemente aprimorar minhas habilidades 

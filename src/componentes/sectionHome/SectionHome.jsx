@@ -1,5 +1,5 @@
 import classes from "./sectionHome.module.css";
-import imgCecis from "../../assets/image-cecis.png"
+import imgCecis from "../../assets/image-cecis.png";
 import { ActionIcon, Container, Flex, Image, Text, Tooltip } from "@mantine/core";
 import { FaGithub, FaLinkedin, FaInstagram   } from "react-icons/fa";
 import { TfiMouse } from "react-icons/tfi";
@@ -7,7 +7,7 @@ import { TfiMouse } from "react-icons/tfi";
 const SectionHome = ({scrollIntoView}) => {
 
     return(
-        <Container fluid pl={24} pr={47} pos='relative' mb={8}>
+        <Container fluid pl={24} pr={47} pos='relative' mb={8} className={classes.teste} id="home">
             <Flex align='center' justify='space-evenly' gap={80}>
                 <Flex direction='column' gap={16}>
                     <Flex gap={8} id={classes.typingAnimation}> 
