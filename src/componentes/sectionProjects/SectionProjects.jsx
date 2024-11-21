@@ -5,7 +5,7 @@ import imgDebate from '../../assets/img-project-minutos-de-debate.png'
 import imgGitfind from '../../assets/img-project-mygitfind.png'
 import { FaReact, FaHtml5, FaCss3Alt } from "react-icons/fa";
 import { SiStyledcomponents, SiJavascript, SiElectron } from "react-icons/si";
-import CardsProjects from "../cardsProjects/cardsProjects";
+import CardsProjects from "../cardsProjects/CardsProjects";
 
 const SectionProjects = () => {
     
