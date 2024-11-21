@@ -7,17 +7,15 @@ import SectionProjects from './componentes/sectionProjects/SectionProjects';
 import SectionHardSkills from './componentes/sectionHardSkills/SectionHardSkills';
 import SectionContact from './componentes/sectionContact/SectionContact';
 import Footer from './componentes/footer/Footer';
-import { useScrollIntoView } from '@mantine/hooks';
 
 
 function App() {
-  const { scrollIntoView, targetRef } = useScrollIntoView({offset: 60});
   return (
     <MantineProvider defaultColorScheme="light">
       <Navbar/>
-      <SectionHome scrollIntoView={scrollIntoView}/>
+      <SectionHome/>
         <Space h="xl"/>
-      <SectionAbout targetRef={targetRef}/>
+      <SectionAbout/>
         <Space h="xl"/>
       <SectionProjects/>
         <Space h="xl"/>

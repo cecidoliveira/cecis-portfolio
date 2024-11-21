@@ -5,7 +5,7 @@ const Footer = () => {
     
     return(
         <Flex align='center' justify='center' h={64} bg='rgba(88, 88, 88, 0.25)'>
-           <Text fw={200} size='lg'>© 2024 <span className={classes.highlights}>cecidoliveira</span>. Todos os direitos reservados.</Text>
+           <Text fw={200} className={classes.description}>© 2024 <span className={classes.highlights}>cecidoliveira</span>. Todos os direitos reservados.</Text>
         </Flex>
     );
 }

@@ -3,18 +3,21 @@ import imgCecis from "../../assets/image-cecis.png";
 import { ActionIcon, Container, Flex, Image, Text, Tooltip } from "@mantine/core";
 import { FaGithub, FaLinkedin, FaInstagram   } from "react-icons/fa";
 import { TfiMouse } from "react-icons/tfi";
+import gsap from 'gsap';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
+gsap.registerPlugin(ScrollToPlugin);
 
-const SectionHome = ({scrollIntoView}) => {
+const SectionHome = () => {
 
     return(
-        <Container fluid pl={24} pr={47} pos='relative' mb={8} className={classes.teste} id="home">
-            <Flex align='center' justify='space-evenly' gap={80}>
-                <Flex direction='column' gap={16}>
+        <Container fluid pl={24} pos='relative' mb={8} id="home" className={classes.containerHome}>
+            <Flex align='center' justify='space-evenly' className={classes.flexContainer}>
+                <Flex direction='column' gap={16} className={classes.MobileAlignItems}>
                     <Flex gap={8} id={classes.typingAnimation}> 
                         <h2 className={classes.title}>Olá, eu sou <span className={classes.highlights}>Cecilia Dornelas</span></h2>
                         <p className={classes.title}>_</p>
                     </Flex>
-                    <Text size="lg" fw={700}>Desenvolvedora Jr. | Apaixonada por criar experiências web incríveis</Text>
+                    <Text className={classes.description}>Desenvolvedora Jr. | Apaixonada por criar experiências web incríveis</Text>
                     <Flex align='center' gap={8}>
                         <ActionIcon 
                             component="a"
@@ -47,7 +50,6 @@ const SectionHome = ({scrollIntoView}) => {
                 </Flex>
                 <div className={classes.imageBox}>
                     <Image
-                        w={350}
                         src={imgCecis}
                     />
                 </div>
@@ -56,7 +58,7 @@ const SectionHome = ({scrollIntoView}) => {
             <Tooltip label="Scroll" offset={-8} >
                 <ActionIcon 
                     component='button'
-                    onClick={() => scrollIntoView({alignment: 'center',})}
+                    onClick={() => gsap.to(window, { duration: 2, scrollTo: '#about'})}
                     variant="transparent" 
                     color="default" 
                     size='lg'

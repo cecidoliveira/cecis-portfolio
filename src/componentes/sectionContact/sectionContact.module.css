@@ -1,6 +1,17 @@
+.containerContact{
+    margin: 2rem 0 1rem;
+    padding: 0 4rem;
+}
+
 .title{
     margin: 0 auto;
     font-size: 2.5rem;
+}
+
+.description{
+    padding: 0 2rem;
+    font-weight: 500;
+    font-size: 1.3rem;
 }
 
 .cardContact{
@@ -13,4 +24,33 @@
 
 .links:hover{
     color: #8a2be2;
+}
+
+@media (max-width: 768px) {
+    .containerContact{
+        text-align: center;
+    }
+    
+    .title{
+        font-size: 2rem;
+    }
+
+    .description{
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .containerContact{
+        padding: 0 2rem;
+    }
+
+    .title{
+        font-size: 1.7rem;
+    }
+
+    .description{
+        padding: 0;
+        font-size: 1rem;
+    }
 }

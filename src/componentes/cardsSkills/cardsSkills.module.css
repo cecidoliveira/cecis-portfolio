@@ -1,5 +1,19 @@
 .cards{
+    gap: 16px; 
+    width: 115px; 
+    height: 140px;
     padding: 1rem 0;
     background-color: rgba(88, 88, 88, 0.25);
     border-radius: 1rem;    
+}
+
+@media (max-width: 321px) {
+    .cards{
+        gap: 0; 
+        width: 85px; 
+        height: 120px;   
+    }
+    .cards svg{
+        width: 2.5rem;
+    }
 }

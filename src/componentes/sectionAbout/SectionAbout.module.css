@@ -1,3 +1,13 @@
+.containerAbout{
+    margin-top: 2rem;
+    padding: 0 4rem;
+}
+
+.description{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
 .title{
     margin: 0 auto;
     font-size: 2.5rem;
@@ -6,3 +16,32 @@
 .highlights{
     color: #8a2be2;
 }
+
+@media (max-width: 768px) {
+    .containerAbout{
+        text-align: center;
+    }
+    
+    .title{
+        font-size: 2rem;
+    }
+
+    .description{
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .containerAbout{
+        padding: 0 2rem;
+    }
+
+    .title{
+        font-size: 1.7rem;
+    }
+
+    .description{
+        font-size: 1rem;
+    }
+}
+

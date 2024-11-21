@@ -1,3 +1,22 @@
+.description{
+    padding: 0 2rem;
+    font-size: 1.3rem;
+}
+
 .highlights{
     color: #8a2be2;
+}
+
+@media (max-width: 768px) {
+    .description{
+        text-align: center;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .description{
+        padding: 0;
+        font-size: 1rem;
+    }
 }

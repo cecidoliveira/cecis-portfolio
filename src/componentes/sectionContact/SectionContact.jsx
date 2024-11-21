@@ -7,9 +7,9 @@ import classes from "./sectionContact.module.css";
 const SectionContact = () => {
     
     return(
-        <Container fluid pl={64} pr={64} mt={32} mb={16} id="contacts">
+        <Container fluid id="contacts" className={classes.containerContact}>
             <h2 className={classes.title}>Vamos Conversar!</h2>
-            <Text size="lg" fw={500} mt={24} ta='center' pl={32} pr={32}> 
+            <Text mt={24} ta='center' className={classes.description}> 
                 Estou sempre em busca de novas oportunidades de aprendizado e colaboração. Se você tem um 
                 projeto interessante ou apenas quer trocar ideias sobre desenvolvimento, ficarei feliz em conversar!
             </Text>

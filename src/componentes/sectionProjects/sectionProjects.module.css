@@ -1,6 +1,6 @@
-.imageProject{
-    box-shadow: 16px 16px 4px 0 rgba(88, 88, 88, 0.25);
-    border: 2px #ffffff solid;
+.containerProjects{
+    margin-top: 2rem;
+    padding: 0 4rem;
 }
 
 .title{
@@ -8,16 +8,17 @@
     font-size: 2.5rem;
 }
 
-.titleProjectCard{
-    margin: 0;
-    font-size: 2rem;
-    font-weight: 400;
+@media (max-width: 768px) {
+    .title{
+        font-size: 2rem;
+    }
 }
-
-.links{
-    text-transform: uppercase;
-}
-
-.links:hover{
-    color: #8a2be2;
+@media (max-width: 480px) {
+    .containerProjects{
+        padding: 0 2rem;
+    }
+    
+    .title{
+        font-size: 1.7rem;
+    }
 }

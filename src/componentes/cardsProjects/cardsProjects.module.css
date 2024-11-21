@@ -1,0 +1,92 @@
+.directionProjectCards, .directionProjectCardsInvert{
+    align-items: stretch;
+    gap: 48px;
+}
+.directionProjectCardsInvert{
+    flex-direction: row-reverse;
+}
+
+.projectCards{
+    width: 500px;
+    margin-top: 16px; 
+}
+
+.title{
+    margin: 0 auto;
+    font-size: 2.5rem;
+}
+
+.imageProject{
+    width: 400px;
+    border: 2px #ffffff solid;
+    box-shadow: 16px 16px 4px 0 rgba(88, 88, 88, 0.25);
+}
+
+.titleProjectCard{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.links{
+    text-transform: uppercase;
+}
+
+.links:hover{
+    color: #8a2be2;
+}
+
+@media (max-width: 768px) {
+    .containerProjects{
+        text-align: center;
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+
+    .directionProjectCards, .directionProjectCardsInvert{
+        gap: 32px;
+    }
+
+    .projectCards{
+        align-items: center;
+        width: 350px;
+    }
+
+    .imageProject{
+        width: 370px;
+        object-fit: fill;
+    }
+}
+
+@media (max-width: 480px) {
+    .containerProjects{
+        padding: 0 2rem;
+    }
+
+    .directionProjectCards, .directionProjectCardsInvert{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projectCards{
+        align-items: center;
+        width: 250px;
+        text-align: center;
+    }
+
+    .imageProject{
+        width: 300px;
+        object-fit: fill;
+    }
+
+    .title{
+        font-size: 1.7rem;
+    }
+
+    .links{
+        font-size: 0.8rem;
+        padding: 0 1rem;
+    }
+}

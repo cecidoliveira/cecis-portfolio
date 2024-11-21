@@ -1,8 +1,21 @@
+.containerHome{
+    padding-right: 47px;
+}
+
+.flexContainer{
+    gap: 80px;
+}
+
 .title{
-    margin: 0 auto;
+    margin: 0;
     font-size: 3rem;
     overflow: hidden;
     white-space: nowrap;
+}
+
+.description{
+    font-weight: 700;
+    font-size: 1.3rem;
 }
 
 #typingAnimation{
@@ -12,6 +25,7 @@
 #typingAnimation p{
     animation: blinkCursor 900ms infinite normal;
 }
+
 @keyframes typing {
    from{
     width: 0;
@@ -39,6 +53,10 @@
     width: 22rem;
 }
 
+.imageBox img{
+    width: 350px;
+}
+
 .imageBox::before{
     position: absolute;
     bottom: 0;
@@ -50,13 +68,86 @@
     z-index: -1;
 }
 
-.imageBox img{
-    visibility: hidden;
-}
-
 .scroll{
     position: absolute;
     top: 90%;
     right: 50%;
     text-decoration: none;
+}
+@media (max-width: 1025px) {
+    .flexContainer{
+        gap: 0;
+    }
+
+    .title{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .containerHome{
+        padding-right: 24px;
+    }
+
+    .flexContainer{
+        flex-direction: column-reverse;
+        gap: 16px;
+    }
+
+    .MobileAlignItems{
+        align-items: center;
+    }
+
+    .title{
+        font-size: 1.7rem;
+    }
+
+    .description{
+        width: 23rem;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .scroll{
+        display: none;
+    }
+
+    .imageBox{
+        width: 15.6rem;
+    }
+
+    .imageBox img{
+        width: 250px;
+        object-fit: cover;
+    }
+
+    .imageBox::before{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 376px) {
+    .title{
+        font-size: 1.4rem;
+    }
+    
+    .description{
+        width: 17rem;
+        font-size: 1rem;
+    }
+
+    .imageBox{
+        width: 13.8rem;
+    }
+
+    .imageBox img{
+        width: 220px;
+        object-fit: cover;
+    }
+
+    .imageBox::before{
+        width: 220px;
+        height: 220px;
+    }
 }
