@@ -74,6 +74,13 @@
     right: 50%;
     text-decoration: none;
 }
+
+@media (min-width: 1441px) {
+    .scroll{
+        display: none;
+    }
+}
+
 @media (max-width: 1025px) {
     .flexContainer{
         gap: 0;
