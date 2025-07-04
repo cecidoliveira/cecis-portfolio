@@ -46,7 +46,7 @@ const SectionContact = () => {
                 <Flex align='center' justify='center' className={classes.cardContact}>
                     <ActionIcon 
                         component="a"
-                        href="mailto:ceciliadornelas.pb@gmail.com"
+                        href="mailto:cecidoliveira.pb@gmail.com"
                         target="_blank"
                         variant="transparent" 
                         color="default" 

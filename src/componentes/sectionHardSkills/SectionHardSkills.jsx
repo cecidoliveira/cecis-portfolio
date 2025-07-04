@@ -1,8 +1,9 @@
 import { Container, Flex } from "@mantine/core";
 import classes from "./sectionHardSkills.module.css";
-import { FaReact, FaHtml5, FaCss3Alt, FaPython, FaFigma } from "react-icons/fa";
-import { SiJavascript, SiElectron, SiMantine } from "react-icons/si";
-import { MdDesignServices } from "react-icons/md";
+import { FaReact, FaHtml5, FaCss3Alt, FaPython, FaFigma, FaPhp } from "react-icons/fa";
+import { GoProjectTemplate } from "react-icons/go";
+import { SiJavascript, SiElectron, SiMantine, SiLooker } from "react-icons/si";
+import { BsFillClipboardDataFill } from "react-icons/bs";
 import CardsSkills from "../cardsSkills/CardsSkills";
 const SectionHardSkills = () => {
     
@@ -15,19 +16,23 @@ const SectionHardSkills = () => {
                     <CardsSkills icon={<FaHtml5 size={70}/>} nameIcon='HTML'/>
                     <CardsSkills icon={<FaCss3Alt size={70}/>} nameIcon='CSS'/>
                     <CardsSkills icon={<SiJavascript size={70}/>} nameIcon='JavaScript'/>
+                    <CardsSkills icon={<FaReact size={70}/>} nameIcon='React'/>
+                </div>
+
+                <div className={classes.divCards}>
+                    <CardsSkills icon={<SiElectron size={70}/>} nameIcon='Electron'/>
+                    <CardsSkills icon={<SiMantine size={70}/>} nameIcon='Mantine UI'/>
+                    <CardsSkills icon={<FaFigma size={70}/>} nameIcon='Figma'/>
+                    <CardsSkills icon={<GoProjectTemplate size={70}/>} nameIcon='UX/UI Design'/>
                 </div>
 
                 <div className={classes.divCards}>
                     <CardsSkills icon={<FaPython size={70}/>} nameIcon='Python'/>
-                    <CardsSkills icon={<FaReact size={70}/>} nameIcon='React'/>
-                    <CardsSkills icon={<MdDesignServices size={70}/>} nameIcon='UX/UI Design'/>
-                </div>
+                    <CardsSkills icon={<BsFillClipboardDataFill size={70}/>} nameIcon='Power BI'/>
+                    <CardsSkills icon={<SiLooker size={70}/>} nameIcon='Looker Studio'/>
+                    <CardsSkills icon={<FaPhp size={70}/>} nameIcon='PHP'/>
+                </div>            
 
-                <div className={classes.divCards}>
-                    <CardsSkills icon={<FaFigma size={70}/>} nameIcon='Figma'/>
-                    <CardsSkills icon={<SiElectron size={70}/>} nameIcon='Electron'/>
-                    <CardsSkills icon={<SiMantine size={70}/>} nameIcon='Mantine UI'/>
-                </div>
             </Flex>
             
         </Container>
