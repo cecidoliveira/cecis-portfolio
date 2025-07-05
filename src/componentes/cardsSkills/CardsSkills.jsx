@@ -7,7 +7,7 @@ const CardsSkills = ({icon, nameIcon}) => {
         <>
            <Flex direction='column' align='center' className={classes.cards}>
                 {icon}
-                <Text size="lg" fw={600}>{nameIcon}</Text>
+                <Text size="md" fw={600}>{nameIcon}</Text>
             </Flex> 
         </>
     );

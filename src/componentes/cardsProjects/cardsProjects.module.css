@@ -46,7 +46,8 @@
     }
 
     .directionProjectCards, .directionProjectCardsInvert{
-        gap: 32px;
+        flex-direction: column;
+        align-items: center;
     }
 
     .projectCards{

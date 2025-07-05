@@ -1,5 +1,5 @@
 import classes from "./sectionHome.module.css";
-import imgCecis from "../../assets/image-cecis.png";
+import imgCecis from "../../assets/image-cecis2.png";
 import { ActionIcon, Container, Flex, Image, Text, Tooltip } from "@mantine/core";
 import { FaGithub, FaLinkedin, FaInstagram   } from "react-icons/fa";
 import { TfiMouse } from "react-icons/tfi";

@@ -54,17 +54,26 @@
 }
 
 .imageBox img{
-    width: 350px;
+    width: 365px;
 }
 
 .imageBox::before{
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
     content: '';
     width: 350px;
     height: 350px;
     border-radius: 50%;
     box-shadow: inset 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+    z-index: -1; */
+    position: absolute;
+    left: 8px;
+    bottom: 15px;
+    content: '';
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    box-shadow: inset 0px 20px 20px 0px rgba(0, 0, 0, 0.25);
     z-index: -1;
 }
 
@@ -124,13 +133,15 @@
     }
 
     .imageBox img{
-        width: 250px;
+        width: 260px;
         object-fit: cover;
     }
 
     .imageBox::before{
-        width: 250px;
-        height: 250px;
+        bottom: 18px;
+        left: 0;
+        width: 260px;
+        height: 260px;
     }
 }
 
